@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        /* Sibling combinator: Targets the <p> elements that are immediately after an <h2> element */
+        h2 + p {
+            color: green; /* Sets the text color to green */
+            font-size: 18px; /* Adjusts the font size */
+            font-style: italic; /* Makes the text italic */
+        }
+    </style>
+</head>
+<body>
+
+    <h2>This is an h2 heading</h2>
+    <p>This paragraph is immediately after the h2 and will be styled by the sibling combinator.</p>
+
+    <p>This paragraph is not immediately after an h2, so it won't be styled by the sibling combinator.</p>
+
+    <h2>Another h2 heading</h2>
+    <p>This is another sibling paragraph, styled using the sibling combinator.</p>
+
+</body>
+</html>

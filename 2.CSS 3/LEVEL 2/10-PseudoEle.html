@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        /* Pseudo-element ::before - adds content before the selected element */
+        h2::before {
+            content: "🔔 "; /* Inserts a bell emoji before the heading */
+            color: orange; /* Sets the color of the pseudo-element */
+        }
+
+        /* Pseudo-element ::after - adds content after the selected element */
+        p::after {
+            content: "✔️"; /* Inserts a check mark emoji after the paragraph */
+            color: green; /* Sets the color of the pseudo-element */
+        }
+
+        /* Pseudo-element ::first-line - styles the first line of the paragraph */
+        p::first-line {
+            font-weight: bold; /* Makes the first line of the paragraph bold */
+            color: blue; /* Changes the color of the first line to blue */
+        }
+
+        /* Pseudo-element ::first-letter - styles the first letter of the paragraph */
+        p::first-letter {
+            font-size: 2em; /* Increases the font size of the first letter */
+            color: rgb(18, 219, 255); /* Changes the color of the first letter to red */
+        }
+        p::selection{
+            background-color: chartreuse;
+        }
+    </style>
+</head>
+<body>
+
+    <h2>This is a heading</h2>
+    <p>This is a paragraph. The first letter and first line are styled differently using pseudo-elements.</p>
+
+</body>
+</html>

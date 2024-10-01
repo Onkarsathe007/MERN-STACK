@@ -1,0 +1,106 @@
+/* -> Universal Selector : 
+   - selects entire document .
+*/
+
+*{
+    background-color: rgb(245, 245, 245);
+    font-family: -apple-system, system-ui, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen-Sans, Ubuntu, Cantarell, 'Helvetica Neue', sans-serif;
+} 
+
+/* -> Element Selector  
+   - Selects all elements of same .
+*/
+h1{
+    color: #a82723 !important;
+}
+/* ID Selector */
+#logo{
+    font-family: Helvetica, sans-serif;
+}
+
+#login{
+    text-align: start;
+    background-color: #cd322d;
+    color: black;
+    font-weight: 500;
+    border-radius: 10%;
+    margin-bottom: 10px;
+    margin-top: 1px;
+}
+#signup{
+    background-color: #cd322d;
+    color: black;
+    font-weight: 500;
+    border-radius: 10%;
+}
+/* Class Selector :
+Select an element based on their class attribute . */
+.upvote {
+    background-color: #e2af07;
+    border-radius: 10%;
+}
+/* 
+Descendent Selector .
+Here we have selected 'a' directly  */
+nav a{
+    color: rgb(176, 60, 60);
+}
+/* Sibling Combinator . */
+p+h3{
+    color: rgb(110, 110, 110);
+}
+/* Child combinator : */
+nav > ul  {
+ background-color: #e2af07;
+}
+
+/* Attribute Selector */
+input[type = "password"]{
+    color: #a82723;
+}
+input[type = "text"]{
+    color: #00ffbb;
+    background-color: ghostwhite;
+}
+input[id = "#pass"]
+{
+    color: #a82723;
+}
+#myid p{
+    color: rgb(0, 0, 0);
+}
+#myid p span{
+    color: rgb(255, 3, 141);
+    font-size: larger;
+}
+nav a:hover{
+    text-decoration: none;
+}
+
+p:active {
+    color:#cd322d;
+}
+p::first-line{
+    background-color: antiquewhite;
+}
+p ::first-letter{
+   color: rgb(255, 30, 30);
+}
+p  ::selection{
+    background-color: aqua;
+}
+
+h1 button:active {
+    background-color: #ff9710;
+}
+/* nth-of-type
+check out mdn -> Pseudo-classes mdn
+*/
+h3:nth-of-type(2n){
+    background-color: #ff9710;
+}
+/* first letter  */
+h1 label::first-letter{
+    background-color: black;
+}
+

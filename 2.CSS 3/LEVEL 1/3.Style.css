@@ -1,0 +1,17 @@
+h1{
+    color: rgb(255, 153, 19);
+    background-color: rgb(251, 251, 251);
+}
+h2{
+    color: rgb(145, 28, 255);
+}
+p{
+    color: rgb(251, 255, 15);
+}
+body{
+    color: blue;
+    background-color: rgb(130, 247, 142);
+}
+button{
+    color: cornflowerblue;
+}

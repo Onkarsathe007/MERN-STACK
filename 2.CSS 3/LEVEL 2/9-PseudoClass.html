@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <style>
+            /* Pseudo-class :hover - changes the style when the user hovers over a link */
+            a:hover {
+                color: red; /* Changes the text color to red when hovered */
+                text-decoration: underline; /* Adds underline on hover */
+            }
+    
+            /* Pseudo-class :focus - styles the element when it gains focus (e.g., input field clicked) */
+            input:focus {
+                border: 2px solid green; /* Adds a green border when input is focused */
+                outline: none; /* Removes the default outline */
+            }
+    
+            /* Pseudo-class :nth-child(odd) - targets every odd child of its parent */
+            li:nth-child(odd) {
+                background-color: lightgray; /* Adds background color to odd list items */
+            }
+            p:active{
+                color: fuchsia;
+            }
+        </style>
+    </head>
+    <body>
+    
+        <h2>Pseudo-Classes Example</h2>
+        
+        <!-- Link with hover effect -->
+        <a href="#">Hover over this link</a>
+    
+        <!-- Input field with focus effect -->
+        <input type="text" placeholder="Click to focus">
+    
+        <!-- Unordered list with nth-child styling -->
+        <ul>
+            <li>Item 1</li>
+            <li>Item 2</li>
+            <li>Item 3</li>
+            <li>Item 4</li>
+        </ul>
+        <!-- Paragraph with active effect;  -->
+        <p>
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Placeat totam consequatur nulla sequi aliquid magni impedit eum delectus, officia cumque obcaecati enim quia ipsa cupiditate rem numquam vero labore illo!
+        </p>
+    
+    </body>
+    </html>
+    
+
+    <form>
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" placeholder="Enter your name">
+        
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" placeholder="Enter your email">
+
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password" placeholder="Enter your password">
+    </form>
+
+</body>
+</html>

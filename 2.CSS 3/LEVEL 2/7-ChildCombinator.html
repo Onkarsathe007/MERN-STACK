@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        /* Child combinator: Targets <p> elements that are direct children of a <div> */
+        div > p {
+            color: blue; /* Sets the text color to blue */
+            font-size: 18px; /* Adjusts the font size */
+            border: 1px solid black; /* Adds a border around the <p> */
+        }
+    </style>
+</head>
+<body>
+
+    <div>
+        <p>This paragraph is a direct child of the div and is styled by the child combinator.</p>
+        <div>
+            <p>This paragraph is inside a nested div, so it won't be affected by the child combinator.</p>
+        </div>
+    </div>
+
+    <p>This paragraph is outside of any div and will not be styled by the child combinator.</p>
+
+</body>
+</html>

@@ -1,11 +1,55 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <style>
+        .face{
+            width: 500px;
+            height: 500px;
+            border-radius: 50%;
+            background-color: orange;
+            border: 2px solid black;
+        }
+        .mouth{
+            width: 200px;
+            height: 75px;
+            background-color: grey;
+            border: 2px solid brown;
+            border-top-left-radius:10%;
+            border-top-right-radius:10%;
+            border-end-start-radius: 50%;
+            border-end-end-radius: 50%;
+            top: 60%;
+            left:30%;
+            position: relative;
+        }
+        .eye1{
+            width: 30px;
+            height: 30px;
+            background-color: black;
+            border-radius: 50%;
+            display:inline-block ;
+            top: 30%;
+            left: 20%;
+            position: relative;
+        }
+        .eye2{
+            width: 30px;
+            height: 30px;
+            background-color: black;
+            border-radius: 50%;
+            display:inline-block ;
+            top: 30%;
+            left: 60%;
+            position: relative;
+        }
+
+    </style>
 </head>
 <body>
-    
+    <div class="face">
+        <div class="eye1"></div>
+        <div class="eye2"></div>
+        <div class="mouth"></div>
+    </div>
 </body>
-</html>
+</html>   

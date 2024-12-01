@@ -4,11 +4,18 @@
     background-color: azure;
     border: 2px solid blueviolet;
     display:grid;
-    grid-template-rows: 60px 60px 60px 60px  60px; /*creates the number of rows*/
-    grid-template-columns: 200px 200px 200px ;
+    /* ************************************************/
+    /* grid-template-rows: 60px 60px 60px 60px  60px; */
+    /*creates the number of rows                      */
+    /* ************************************************/
+    /* grid-template-columns: 200px 200px 200px ;     */
     /* grid-template-columns: auto auto ; */
     /* If I simply writes like that then there will be 2 cols  */ 
-    /* create the number of columns  */
+    /* ************************************************/
+    /* we can use thi as well */
+    grid-template-rows: repeat(3,1fr); 
+    grid-template-columns: repeat(4,2fr);
+    /* *********************************************** */
 }
 .item{
     /* width: 50px;

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        .container{
+            width: 600px;
+            height: 600px;
+            background-color: azure;
+            border: 2px solid blueviolet;
+            display:grid;
+            grid-template-rows: repeat(3,1fr); 
+            grid-template-columns: repeat(3,2fr);
+            row-gap: 15px;
+            column-gap: 15px;
+        }
+        .item{
+ 
+            background-color: greenyellow;
+            border: 2px solid black;
+        }
+        #itemx{
+            grid-column-start: 1;
+            grid-column-end: 4;
+        }
+        
+    </style>
+    <title>Document</title>
+</head>
+<body>
+    <h1>Grid Play-Ground</h1>
+    <div class="container">
+        <div class="item" id="itemx">1</div>
+        <div class="item">2</div>
+        <div class="item">3</div>
+        <div class="item">4</div>
+        <div class="item">5</div>
+    </div>
+</body>
+</html>

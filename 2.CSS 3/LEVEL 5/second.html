@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        h1{
+            color: rgb(0, 0, 0);
+            font-family: monospace;
+            font-weight: 300;
+            text-align: right;
+        }
+        .container {
+            height: 500px;
+            width: 80%;
+            border-radius: 5px;
+            border: 2px solid black;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-evenly;
+            margin: 2px auto;
+            /* flex-wrap: wrap; */
+            align-items:baseline;
+            /* flex-basis: -10px; */
+        }
+        .container div {
+            height: 100px;
+            width: 200px;
+            border: 1px solid black;
+            text-align: center;
+            color: wheat;
+        }
+        #violet{
+            /* flex-grow: 2; */
+            flex-shrink: 1;
+        }
+        #dark-violet{
+            /* flex-grow: 2; */
+            /* flex-shrink: 3; */
+        }
+    </style>
+    <title>Flexbox</title>
+</head>
+<body>
+    <h1 style="text-align: center;font: weight 500px;">Flexbox PlayGround</h1>
+    <div class="container">
+        <div id="violet" style="background-color: violet;">1</div>
+        <div style="background-color: rgb(232, 80, 232);">2</div>
+        <div style="background-color: rgb(228, 44, 228);">3</div>
+        <div style="background-color: rgb(236, 17, 236);">4</div>
+        <div style="background-color: rgb(207, 0, 207);">5</div>
+        <div style="background-color: rgb(169, 0, 169);">6</div>
+        <div style="background-color: rgb(134, 0, 134);">7</div>
+        <div id="dark-violet" style="background-color: rgb(110, 0, 110);">8</div>
+    <div style="background-color: rgb(41, 0, 41);">9</div>
+       
+    </div>
+</body>
+</html>

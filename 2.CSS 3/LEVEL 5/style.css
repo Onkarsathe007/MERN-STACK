@@ -1,0 +1,32 @@
+#container {
+    background-color: aliceblue;
+    height: 300px;
+    width: 80%;
+    border: 2px solid black;
+    margin: 10px auto;
+    display: flex;   /*Making container as Flexbox*/
+    flex-direction: column;     /*By default its a row*/
+    /*Attribute Values are :row,row-revers,column,colum-reverse */ 
+    justify-content:flex-start;
+    /*  flex-start,flex-end,flex,center  */
+    /*space-between,space-around,space-evenly 
+    space-between */
+    flex-wrap: wrap;
+    /*nowrap,wrap,wrap-reverse*/
+    align-items: baseline;
+
+    align-content:space-evenly;
+    /* Only when there are multiple lines of items (e.g., using flex-wrap: wrap or in a grid layout).  */
+    /*  flex-start,flex-end,flex,center  */
+    /*space-between,space-around,space-evenly */
+    
+}
+#container div {
+    height: 100px;
+    width:200px;
+    color: wheat;
+    text-align: center;
+    font-size:1.5em;
+    border-radius: 10px;
+    flex-basis: 100px;
+}

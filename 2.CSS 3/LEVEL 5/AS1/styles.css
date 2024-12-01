@@ -1,0 +1,20 @@
+.container{
+    height: 500px;
+    width: 500px;
+    border-radius: 20px;
+    border: 2px solid rgb(0, 68, 255);
+    margin: 3px auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    
+}
+.container div{
+    margin-top: 1.5%;
+    width: 140px;
+    height: 140px;
+    border: 1px solid black;
+    border-radius: 20px;
+    font-size: 100px;
+    text-align: center;
+}

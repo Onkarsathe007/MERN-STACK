@@ -1,0 +1,17 @@
+.container{
+    width: 900px;
+    height: 50px;
+    background-color: pink;
+    border: 2px solid rgb(0, 127, 211);
+    border-radius: 5px;
+    display: flex;
+
+}
+.container div{
+    height: 50px;
+    width: 80px;
+    position: relative;
+    top: 20%;
+    font-size: large;
+    /* left: 2%; */
+}

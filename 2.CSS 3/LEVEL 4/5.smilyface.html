@@ -25,7 +25,7 @@
         .eye1{
             width: 30px;
             height: 30px;
-            background-color: black;
+            background-color: rgb(255, 255, 255);
             border-radius: 50%;
             display:inline-block ;
             top: 30%;
@@ -35,20 +35,32 @@
         .eye2{
             width: 30px;
             height: 30px;
-            background-color: black;
+            background-color: rgb(239, 239, 239);
             border-radius: 50%;
             display:inline-block ;
             top: 30%;
             left: 60%;
             position: relative;
         }
-
+        .eyeballs{
+            width: 15px;
+            height: 15px;
+            background-color: rgb(0, 0, 0);
+            border-radius: 50%;
+            position :relative;
+            top: 20%;
+            left: 20%;
+        }
     </style>
 </head>
 <body>
     <div class="face">
-        <div class="eye1"></div>
-        <div class="eye2"></div>
+        <div class="eye1">
+            <div class="eyeballs"></div>
+        </div>
+        <div class="eye2">
+            <div class="eyeballs"></div>
+        </div>
         <div class="mouth"></div>
     </div>
 </body>

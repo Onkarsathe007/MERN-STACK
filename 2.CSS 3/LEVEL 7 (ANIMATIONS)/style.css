@@ -1,0 +1,46 @@
+.container{
+    width: 200px;
+    height: 200px;
+    background-color: violet;
+    border: 2px solid rgb(111, 0, 111);
+    border-radius: 10px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-align: center;
+    margin: 2px auto;
+    /* animationa attributes  */
+    animation : font-animation;
+    animation-duration: 2s;
+    animation-timing-function: ease-in;
+    transition-delay: 2s;
+    animation-iteration-count: 3;
+    animation-direction: normal;
+    /* another one animation  */
+    animation: coloranimate;
+    animation-duration: 3s;
+    animation-timing-function: ease-in;
+    transition-delay: 2s;
+    animation: name duration timing-function delay iteration-count direction fill-mode;
+    animation-iteration-count: infinite;
+
+}
+h1{
+    font-weight: 100;
+    text-align: center;
+}
+@keyframes font-animation {
+    from {
+        font-size: 20px;
+    }
+    to{
+        font-size: 40px;
+    }
+} 
+
+@keyframes coloranimate {
+    from {
+        background-color: violet;
+    }
+    to {
+        background-color: orangered;
+    }
+}

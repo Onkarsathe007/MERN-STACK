@@ -1,0 +1,40 @@
+.container {
+    width: 500px;
+    height: 500px;
+    background-color: pink;
+    grid-template-columns: repeat(12,1fr);
+    grid-template-rows: repeat(12,1fr);
+    display: grid;
+    grid-gap: 10px;
+
+}
+/* from grid gaps. */
+.first{
+    grid-column: 1 / -1; /* Spans all 12 columns */
+    grid-row: 1 / 2; /* Occupies 1 row */
+}
+.second{
+    grid-column: 1 / 4; /* Spans 3 columns */
+  grid-row: 2 / 12; /* Occupies 9 rows */
+}
+
+.third{
+    grid-column: 4 / 10;
+    grid-row: 2 / 3;
+}
+.fourth{
+    grid-column: 10 / 13;
+    grid-row: 2 / 12; 
+}
+.fifth{
+    grid-column: 4 / 10;
+    grid-row: 3 / 12;
+}
+.sixth{
+    grid-column: 1 / 13;
+
+}
+.container div{
+ background-color: rgb(247, 89, 116);
+ border: 2px solid black;
+}

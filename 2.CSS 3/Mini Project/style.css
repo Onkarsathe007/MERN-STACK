@@ -8,7 +8,7 @@
     height: 100vh;   /*vh - view port height*/
     background-size: cover;
 }
-.btn_one{
+.btn_one i{
     color: white;
     font-size: 30px;
     font-weight: 700;
@@ -16,14 +16,16 @@
     left: 16px;
     line-height: 60px;
     cursor: pointer;
+    transition: all 0.4 linear;
 }
 .sidebar_menu{
      position: fixed;
-     /* left: -350px; */
+     left: -350px;
      height: 100vh;
      width: 300px;
      background-color: rgb(255, 255, 255,0.1);   /*0.1 is apha chanel*/
      box-shadow: 0 0 6px rgb(255, 255, 255,0.1);
+     transition: all 0.3 linear;
 }
 .sidebar_menu .logo{
     position: absolute;
@@ -53,6 +55,7 @@
     position: absolute;
     left: 275px;
     cursor: pointer;
+    transition: all 0.3 linear;
 }
 .sidebar_menu .menu li{
     margin-top: 6px;
@@ -90,7 +93,18 @@
 .btn_two i:hover{
     font-size: 30px;
 }
+
 .sidebar_menu .social_media i:hover{
     opacity: 1;
     transform: scale(1.1);
+}
+/* 
+The ~ operator in CSS is called the general sibling combinator.  */
+#check:checked ~ .sidebar_menu {
+    left: 0;
+}
+
+/* When checkbox is checked, hide the Button Two icon */
+#btn_two:checked ~ .sidebar_menu .btn_two i {
+    visibility: hidden; /* Hide the icon */
 }

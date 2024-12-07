@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- <script src="app.js"></script> -->
+    <title>code here</title>
+</head>
+<body>
+    <!-- <form action="">
+        <label for="username ">Enter Your Name :</label>  <br>
+        <input type="text" name="username" id="username">  <br>
+        <label for="age ">Enter Your Age :</label>  <br>
+        <input type="text" name="username" id="age">  <br>
+        
+        <button id="btn1" onclick="func()">Submit</button>
+    </form> -->
+    <script>
+      function func()
+      {
+        var a = parseInt(prompt('Enter a number'));
+        var b = parseInt(prompt('Enter a number'));
+        var rem1,rem2;
+        rem1 = a %  10;
+        rem2 = b % 10;
+        if(rem1 == rem2)
+        {
+            console.log("both have same last digit");
+        }
+        else{
+            console.log("Not same last digit")
+        }
+      }
+      func();
+    </script>
+</body>
+</html

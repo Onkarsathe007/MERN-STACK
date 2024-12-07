@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vote</title>
+</head>
+<body>
+    <form action="" method="get" name="form1">
+        <input type="text" name="usrname" id="usrname"> <br>
+        <input type="button" value="btn" value="Submit" onclick="isGood()"> 
+    </form>
+    <script>
+     // Suppose a good string is that which starts with 'o' and length of string must be 5
+    function isGood()
+    {
+        //remeber this getelementById().value accepts the string value so 
+        //inorder to convert the value into int value we use parseInt() method.
+       var val = document.getElementById("usrname").value; 
+       if(val[0] == 'o' &&  val.length == 5)
+       {
+           alert("Good String");
+       }
+       else{
+           console.log("Not a good string !");
+       }
+   }
+    </script>
+</body>
+</html>

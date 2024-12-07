@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>switch statement</title>
+</head>
+<body>
+    <form action="">
+        <input type="text" name="num" id="num">  <br>
+        <button id="btn" value="btn" onclick="findNum()">Click Me</button>
+    </form>
+    <script>
+            function findNum()
+            {
+                var num = parseInt(document.getElementById("num").value);
+                switch(num)
+                {
+                    case 1 :
+                    alert("one");
+                    break;
+
+                    case 2 :
+                    alert("Two");
+                    break;
+                    
+                    case 3 :
+                    alert("Three");
+                    break;
+                    
+                    case 4 :
+                    alert("Four");
+                    break;
+                    
+                    case 5 :
+                    alert("Five");
+                    break;
+                    
+                    default:
+                    alert("checkout console!");
+                    console.log("Value greate than 5 or less than 0");
+                }
+            }
+    </script>
+</body>
+</html>

@@ -1,4 +1,4 @@
->##Arrays :
+>Arrays :
 *Arrays are special type of variable which store multiple values using special
 syntax .*
 

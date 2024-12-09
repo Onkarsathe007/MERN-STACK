@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Array ref</title>
+</head>
+<body>
+    <script>
+        let arr = [1,2,3,4,5,6];
+        let arr_cpy = arr;   //now address of arr is copied to arr, now arr_cpy if refrence to the element's of arr as well
+        console.log(arr);
+        console.log(arr_cpy);
+        arr[0]="x";
+        console.log(arr);
+        console.log(arr_cpy);
+        //if we assign the new array to the arr_cpy then it will be refering to new array .
+
+    </script>
+</body>
+</html>

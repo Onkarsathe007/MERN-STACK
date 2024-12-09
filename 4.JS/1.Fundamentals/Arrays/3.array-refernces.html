@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Array Refrences</title>
+</head>
+<body>
+    <script>
+        let student = ["onkar","suhas","kartikey"];
+        //here student is not actually storing the values of the array ,
+        //instead it storing the address where all the data is stored then data can be simly accessed by using that refrence.
+        //e.g :
+        if("onkar"=="onkar")
+        {
+            console.log("Returns True !");
+        }
+        //this is comparing the address which is not actully values 
+        if([101]==[101])
+        {
+            cosole.log("True");
+        }
+        else{
+            console.log("Returns False !");  //it will return false
+            //beacase this are stores at different memory locations 
+        }
+    </script>
+</body>
+</html>

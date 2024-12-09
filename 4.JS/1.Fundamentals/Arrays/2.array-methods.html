@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Array methods </title>
+</head>
+<body>
+    <script>
+        //Array Methods :
+        //1.Push     |   2.Pop     | 3.Unishift     | 4.shift 
+        //add at end | delete last | adds ele start | Deletes from start and returns it 
+        
+        //5.indexOf()           | 6.includes()                  |7.concat() |8.reverse()
+        // reuturn index of ele | ret 'T' if found ele else 'F' |           | reverse original array 
+
+        //9.slice(start,end-not included-) | we can also pass -ve
+        //return subarray                  | parameter in slice
+        //from an  array                   | to access from last
+
+        //10.splice()
+        // removes /replace /add elements
+        // in place 
+        // syntax :
+        // splice(start,deleteCount,item0...itemN)
+
+        
+        //sort()    : default- Ascending order(only suitable for string data)
+        //decrepancy:
+        var arr = [100,200,43,590,231,1000];
+        console.log(arr.sort())
+        //Output Will be : [100, 1000, 200, 231, 43, 590]
+
+        let cars  = ["January","July","March","August"];
+        //must be july-june-march-august
+
+        cars.splice(0,2,"July","June");
+        console.log(cars);
+        console.log(cars.reverse().indexOf("March"));   //chaining
+    </script>
+</body>
+</html>
